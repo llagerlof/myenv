@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# searchpreview 1.0 - A shell script to search file contents, recursively, with file contents previwer.
+#
+# Syntax: $ searchpreview <FILETYPE> <SEARCH_TERM>  OR  $ searchpreview <SEARCH_TERM>
+#
+# Dependencies: https://github.com/BurntSushi/ripgrep, https://github.com/junegunn/fzf
+#
+# Source: https://github.com/llagerlof/mylinuxenv
+#
+# License: MIT
+#
+# Author: Lawrence Lagerlof <@llagerlof>
+#
+
+if [ $# -lt 1 ] || [ $# -gt 2 ]
+then
+    echo "Syntax: $ searchpreview <FILETYPE> <SEARCH_TERM>  OR  $ searchpreview <SEARCH_TERM>"
+fi
+
+if [ $# -eq 1 ]
+then
+    rg -li "$1" | fzf --preview "rg -ni --color always \"$1\" -B5 -A5 {+}"
+fi
+
+if [ $# -eq 2 ]
+then
+    rg -li -t"$1" "$2" | fzf --preview "rg -ni --color always \"$2\" -B5 -A5 {+}"
+fi
