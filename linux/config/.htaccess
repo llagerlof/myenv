@@ -1,0 +1,10 @@
+# This is an apache configuration file to ask authentication to access web pages.
+# Must stay in directory that you want apache authentication.
+# The usernames and passwords are stored in /var/.htpasswd
+Deny From All
+Allow From 127.0.0.1 192.168.0.27 192.168.0.125
+AuthName "Please identify yourself"
+AuthType Basic
+AuthUserFile /var/.htpasswd
+require valid-user
+DirectoryIndex index.htm index.php
