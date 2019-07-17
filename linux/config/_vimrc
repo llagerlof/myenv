@@ -1,0 +1,6 @@
+" Force encoding to UTF-8
+set fileformat=unix
+set fileformats=unix,dos
+set encoding=utf-8
+set fileencoding=utf-8
+
