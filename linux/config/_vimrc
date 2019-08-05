@@ -4,3 +4,17 @@ set fileformats=unix,dos
 set encoding=utf-8
 set fileencoding=utf-8
 
+" Spaces instead of tabs
+set autoindent
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+
+" Line numbers
+set number
+
+" Filename and other info on status bar
+" Thanks https://github.com/scrooloose
+" https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
+set laststatus=2
+set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
