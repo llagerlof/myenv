@@ -17,7 +17,7 @@ set number
 " Thanks https://github.com/scrooloose
 " https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
 set laststatus=2
-" Use R to show full path in filename
-set statusline=%R\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+" Use F to show full path in filename
+set statusline=%F\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 " Use t to show just the filename
 " set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
