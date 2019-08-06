@@ -6,3 +6,16 @@ export LS_COLORS
 
 # Brighter prompt
 export PS1="\[\033[38;5;46m\]\u\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;46m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+# Force terminal to use UTF-8 to render characters
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Set default editor
+export EDITOR="/usr/bin/vim"
+
+# Function to assist tmux
+# Inside any pane use peek <file> to edit it in the lower part of pane
+# The EDITOR variable must be set
+peek() { tmux split-window -p 33 "$EDITOR" "$@" }
