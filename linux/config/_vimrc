@@ -16,8 +16,15 @@ set number
 " Filename and other info on status bar
 " Thanks https://github.com/scrooloose
 " https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
+
+" Show status line
 set laststatus=2
+
 " Use F to show full path in filename
-set statusline=%F\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+set statusline=[%t]\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]\ [%F]
+
 " Use t to show just the filename
 " set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+" Status line color
+hi StatusLine ctermbg=white ctermfg=DarkGrey
