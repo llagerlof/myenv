@@ -18,4 +18,4 @@ export EDITOR="/usr/bin/vim"
 # Function to assist tmux
 # Inside any pane use peek <file> to edit it in the lower part of pane
 # The EDITOR variable must be set
-peek() { tmux split-window -p 33 "$EDITOR" "$@" }
+peek() { tmux split-window -p 33 "$EDITOR" "$@"; }
