@@ -7,6 +7,9 @@
 
     "workbench.editor.openPositioning": "first",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "githd.blameView.info": "#FFFFFF77"
+    },
 
     "explorer.sortOrder": "default",
 
@@ -39,4 +42,6 @@
     "java.configuration.checkProjectSettingsExclusions": false,
 
     "regex-previewer.enableCodeLens": false,
+
+    "githd.blameView.enabled": false,
 }
