@@ -1,0 +1,42 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    "window.title": "${dirty}\\${folderName}\\${activeEditorMedium}",
+    "window.zoomLevel": 0,
+
+    "workbench.editor.openPositioning": "first",
+    "workbench.startupEditor": "newUntitledFile",
+
+    "explorer.sortOrder": "default",
+
+    "extensions.ignoreRecommendations": true,
+
+    "editor.renderControlCharacters": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.dragAndDrop": false,
+    "editor.links": false,
+    "editor.fontFamily": "'Courier New', Consolas, monospace",
+    "editor.fontSize": 14,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.suggestSelection": "first",
+    "editor.rulers": [140],
+    "editor.wordWrapColumn": 140,
+    "editor.wordWrap": "wordWrapColumn",
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+
+    "php-docblocker.returnGap": false,
+
+    "java.home": "c:\\Program Files\\openjdk-1.8.0",
+    "java.configuration.checkProjectSettingsExclusions": false,
+
+    "regex-previewer.enableCodeLens": false,
+}
