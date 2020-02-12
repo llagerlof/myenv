@@ -8,7 +8,10 @@
     "workbench.editor.openPositioning": "first",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorCustomizations": {
-        "githd.blameView.info": "#FFFFFF77"
+        "githd.blameView.info": "#FFFFFF77",
+        "editorGutter.background": "#222222",
+        "editor.lineHighlightBackground": "#222222",
+        "editorWhitespace.foreground": "#333333",
     },
 
     "explorer.sortOrder": "default",
@@ -22,7 +25,7 @@
     "editor.dragAndDrop": false,
     "editor.links": false,
     "editor.fontFamily": "'Courier New', Consolas, monospace",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.suggestSelection": "first",
     "editor.rulers": [140],
@@ -30,7 +33,7 @@
     "editor.wordWrap": "wordWrapColumn",
 
     "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": false,
+    "diffEditor.renderSideBySide": true,
 
     "files.trimTrailingWhitespace": true,
     "files.eol": "\n",
@@ -44,4 +47,15 @@
     "regex-previewer.enableCodeLens": false,
 
     "githd.blameView.enabled": false,
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "todo-tree.highlights.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
+
+    "code-eol.newlineCharacter": "¬",
+    "code-eol.returnCharacter" : "¤",
+    "code-eol.crlfCharacter"   : "¤¬",
+    "code-eol.highlightNonDefault": true,
+
 }
