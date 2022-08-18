@@ -4,6 +4,7 @@
 
     "window.title": "${dirty}\\${folderName}\\${activeEditorMedium}",
     "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
 
     "workbench.editor.openPositioning": "first",
     "workbench.startupEditor": "newUntitledFile",
@@ -31,6 +32,7 @@
     "editor.rulers": [140],
     "editor.wordWrapColumn": 140,
     "editor.wordWrap": "wordWrapColumn",
+    "editor.inlineSuggest.enabled": true,
 
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": true,
@@ -52,6 +54,8 @@
     },
     "todo-tree.highlights.enabled": true,
     "workbench.iconTheme": "vscode-icons",
+    "php.validate.executablePath": "/usr/bin/php",
+    
 
     "code-eol.newlineCharacter": "¬",
     "code-eol.returnCharacter" : "¤",
